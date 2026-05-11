@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <header class="site-header glass">
+        <a class="logo" href="#home">CINE<span>PORT</span></a>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero-content reveal">
+                <h1>Hello, I&rsquo;m <span class="accent">ERIC KYALO KIVAI</span></h1>
+                <p class="typing-line">
+                    <span id="typingText"></span><span class="cursor">|</span>
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-profile reveal">
+                <div class="profile-frame tilt-card">
+                    <img src="assets/eric-kyalo-kivai-cinematic.jpg" alt="ERIC KYALO KIVAI portrait" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-title reveal">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-grid">
+                <article class="glass about-text reveal">
+                    <p>
+                        I am ERIC KYALO KIVAI, a technology enthusiast focused on building practical systems and clean user experiences. I enjoy solving real-world problems through software, networking, and scalable system design.
+                    </p>
+                    <div class="skill-bars">
+                        <div class="skill-item"><span>SQL</span>
+                            <div class="bar"><i style="--w: 90%"></i></div>
+                        </div>
+                        <div class="skill-item"><span>Java</span>
+                            <div class="bar"><i style="--w: 88%"></i></div>
+                        </div>
+                        <div class="skill-item"><span>Information Systems</span>
+                            <div class="bar"><i style="--w: 86%"></i></div>
+                        </div>
+                        <div class="skill-item"><span>Networking</span>
+                            <div class="bar"><i style="--w: 83%"></i></div>
+                        </div>
+                        <div class="skill-item"><span>Distributed Systems</span>
+                            <div class="bar"><i style="--w: 82%"></i></div>
+                        </div>
+                        <div class="skill-item"><span>HTML</span>
+                            <div class="bar"><i style="--w: 85%"></i></div>
+                        </div>
+                        <div class="skill-item"><span>CSS</span>
+                            <div class="bar"><i style="--w: 84%"></i></div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="shape-stage reveal" aria-hidden="true">
+                    <div class="shape cube"></div>
+                    <div class="shape sphere"></div>
+                    <div class="shape ring"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-title reveal">
+                <h2>Projects</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card glass tilt-card reveal">
+                    <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=1000&q=80" alt="Project dashboard" />
+                    <h3>Logistics Web</h3>
+                    <p>A logistics-focused web project with clean UI and practical workflow design.</p>
+                    <div class="project-actions">
+                        <a href="https://kyalo-ai.github.io/logistics-web/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live Demo</a>
+                        <a href="https://github.com/Kyalo-ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass tilt-card reveal">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1000&q=80" alt="Code on screen" />
+                    <h3>Inkspark Blog</h3>
+                    <p>A modern blog interface designed for smooth reading and engaging presentation.</p>
+                    <div class="project-actions">
+                        <a href="https://kyalo-ai.github.io/Inkspark-blog/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live Demo</a>
+                        <a href="https://github.com/Kyalo-ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass tilt-card reveal">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80" alt="App showcase" />
+                    <h3>DSA Repository</h3>
+                    <p>Data structures and algorithms solutions showcasing problem-solving approach in code.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/Kyalo-ai/DSA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live Demo</a>
+                        <a href="https://github.com/Kyalo-ai/DSA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-title reveal">
+                <h2>Skills</h2>
+            </div>
+            <div class="skill-icons">
+                <div class="skill-chip glass reveal">SQL</div>
+                <div class="skill-chip glass reveal">Java</div>
+                <div class="skill-chip glass reveal">Information Systems</div>
+                <div class="skill-chip glass reveal">Networking</div>
+                <div class="skill-chip glass reveal">Distributed Systems</div>
+                <div class="skill-chip glass reveal">HTML</div>
+                <div class="skill-chip glass reveal">CSS</div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-title reveal">
+                <h2>Contact</h2>
+            </div>
+            <p class="contact-meta reveal">Phone: <a href="tel:0759208088">0759208088</a></p>
+            <p class="contact-meta reveal">Email: <a href="mailto:kivaikyalo383@gmail.com">kivaikyalo383@gmail.com</a></p>
+            <form id="contactForm" class="contact-form glass reveal">
+                <label>Name<input type="text" name="name" placeholder="Your name" required /></label>
+                <label>Email<input type="email" name="email" placeholder="you@example.com" required /></label>
+                <label>Message<textarea name="message" rows="5" placeholder="Let&rsquo;s build something cinematic." required></textarea></label>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> ERIC KYALO KIVAI. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://github.com/Kyalo-ai" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+            <a href="https://kyalo-ai.github.io/logistics-web/" target="_blank" rel="noopener noreferrer" aria-label="Logistics Web">Logistics Web</a>
+            <a href="https://kyalo-ai.github.io/Inkspark-blog/" target="_blank" rel="noopener noreferrer" aria-label="Inkspark Blog">Inkspark Blog</a>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
